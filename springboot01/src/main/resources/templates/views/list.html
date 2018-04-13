@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+用户列表：
+<table>
+    <thead>
+        <th>ID</th>
+        <th>Name</th>
+    </thead>
+    <tbody>
+        <tr th:each="user: ${users}">
+            <td th:text="${user.id}">123</td>
+            <td th:text="${user.name}">ssdf</td>
+        </tr>
+    </tbody>
+
+</table>
+</body>
+</html>
